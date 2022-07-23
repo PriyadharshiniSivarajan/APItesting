@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "3f8ddb67-aaaa-4042-bac2-f25640da4aa7",
+		"name": "ServiceNowCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create_Incident",
+			"_postman_id": "9b606fd8-98f7-4ff4-8f3d-2b90337af2c7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "R3Vfb!jLt1-Z",
+						"username": "admin"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"short_description\":\"Start\",\"description\":\"Windows not working\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dev81794.service-now.com/api/now/table/incident"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-training.atlassian.net/rest/api/2/issue/11198",
+			"_postman_id": "dc1b848d-2ff7-4e46-ac20-8aa6fef4225f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://api-training.atlassian.net/rest/api/2/issue/11198"
+			},
+			"response": []
+		},
+		{
+			"name": "https://secure.gravatar.com/avatar/0df06c4d61ffa11744dc225b789dfb67?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FHR-2.png",
+			"_postman_id": "468a409f-7176-4a6f-86eb-68415e33029f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://secure.gravatar.com/avatar/0df06c4d61ffa11744dc225b789dfb67?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FHR-2.png",
+					"protocol": "https",
+					"host": [
+						"secure",
+						"gravatar",
+						"com"
+					],
+					"path": [
+						"avatar",
+						"0df06c4d61ffa11744dc225b789dfb67"
+					],
+					"query": [
+						{
+							"key": "d",
+							"value": "https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FHR-2.png"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
